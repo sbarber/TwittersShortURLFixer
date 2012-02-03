@@ -2,6 +2,7 @@
   "name": "Twitter's URL Shortener Fix",
   "version": "1.0",
   "description": "Fix those short t.co URL links that have punctuation at the end.",
+  "homepage_url": "https://github.com/sbarber/TwittersShortURLFixer",
   
   "background_page": "background.html",
   
