@@ -1,19 +1,29 @@
 {
-  "name": "Twitter's URL Shortener Fix",
-  "version": "1.0",
-  "description": "Fix those short t.co URL links that have punctuation at the end.",
+  "name": "Twitter's URL Fix",
+  "version": "2.0",
+  "description": "Fix those twitter URL links that have punctuation at the end.",
+  "manifest_version": 2,
   "homepage_url": "https://github.com/sbarber/TwittersShortURLFixer",
   "icons": {
       "128": "twitter.png"
   },
-  
-  "background_page": "background.html",
-  
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
   "content_scripts": [{
-      "matches": ["<all_urls>"],
+      "matches": ["http://t.co/*", "https://t.co/*",
+        "http://twitter.com/*", "https://twitter.com/*"
+      ],
       "js": ["content_script.js"]
   }],
-  
-  "permissions": ["tabs"]
-  
+
+  "permissions": [
+    "tabs",
+    "http://t.co/*", "https://t.co/*",
+    "http://twitter.com/*", "https://twitter.com/*",
+    "background"
+  ]
+
 }

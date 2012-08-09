@@ -1,4 +1,2 @@
 TODO:
 - Add Google Analytics
-- Re-write so it only need to access t.co domain and not all domains in
-  the manifest declaration.
