@@ -1,7 +1,7 @@
 {
-  "name": "Twitter's URL Fix",
-  "version": "2.0.1",
-  "description": "Fix those twitter URL links that have punctuation at the end.",
+  "name": "Twitter URL Fixer",
+  "version": "2.0.2",
+  "description": "Fix those twitter URLs that have punctuation at the end.",
   "manifest_version": 2,
   "homepage_url": "https://github.com/sbarber/TwittersShortURLFixer",
   "icons": {
